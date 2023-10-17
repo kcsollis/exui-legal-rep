@@ -1,0 +1,501 @@
+{% extends "layouts/main-legalrep.html" %}
+
+{% block pageTitle %}
+  Manage cases – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block main %}
+
+<div class="govuk-width-container">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-full">
+        <div class="grid-item-case-list govuk-heading-xl">
+          <div class="case-header">
+            <h1 class="case-list-header" style="font-size: 40px;">Check your documents</h1>
+          </div> <!-- Close the "case-header" container -->
+          <div class="govuk-!-padding-bottom-8"></div>
+
+          <h2 class="govuk-heading-m">Disclosure</h2>
+        <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Disclosure list
+            </dt>
+            <dd class="govuk-summary-list__value">
+                <a href="#" target="_blank">Contract_May_2019.pdf</a>
+            </dd>
+            
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden"> name</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Documents for disclosure
+            </dt>
+            <dd class="govuk-summary-list__value">
+                <a href="#" target="_blank">Receipt_June_2019.pdf</a>
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden"> date of birth</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              
+            </dt>
+            <dd class="govuk-summary-list__value">
+                <a href="#" target="_blank">Photo_of_Proof.jpg</a>
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden"> customer reference</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              
+            </dt>
+            <dd class="govuk-summary-list__value">
+                <a href="#" target="_blank">Email_21_June_2019.rtf</a>
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden"> address</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              
+            </dt>
+            <dd class="govuk-summary-list__value">
+                <a href="#" target="_blank">Disclosure_list_3.pdf</a>
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden"> contact details</span>
+              </a>
+            </dd>
+          </div>
+        </dl>
+        <h2 class="govuk-heading-m">Witness evidence</h2>
+        <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Witness statement
+            </dt>
+            <dd class="govuk-summary-list__value">
+                <a href="#" target="_blank">1_witness_statement_John_Smith.pdf</a>
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden"> previous application number</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              
+            </dt>
+            <dd class="govuk-summary-list__value">
+                <a href="#" target="_blank">2_witness_statement_Mallory_Archer.pdf</a>
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden"> licence type</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              
+            </dt>
+            <dd class="govuk-summary-list__value">
+                <a href="#" target="_blank">3_witness_statement_Cyril_Figgis.pdf</a>
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden"> home address</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              
+            </dt>
+            <dd class="govuk-summary-list__value">
+                <a href="#" target="_blank">4_witness_statement_Lana_Kane.pdf</a>
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden"> licence period</span>
+              </a>
+            </dd>
+          </div>
+
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              
+            </dt>
+            <dd class="govuk-summary-list__value">
+                <a href="#" target="_blank">5_witness_statement_Pamela_Poovey.pdf</a>
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden"> licence period</span>
+              </a>
+            </dd>
+            </div>
+
+            <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Witness summary
+                </dt>
+                <dd class="govuk-summary-list__value">
+                    <a href="#" target="_blank">5_witness_statement_Algernop_Krieger.pdf</a>
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="#">
+                    Change<span class="govuk-visually-hidden"> licence period</span>
+                  </a>
+                </dd>
+                </div>
+
+                <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                      Notice of intention to rely on hearsay evidence
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                        <a href="#" target="_blank">Notice_of_Intention_v1.pdf</a>
+                    </dd>
+                    <dd class="govuk-summary-list__actions">
+                      <a class="govuk-link" href="#">
+                        Change<span class="govuk-visually-hidden"> licence period</span>
+                      </a>
+                    </dd>
+                    </div>
+
+                    <div class="govuk-summary-list__row">
+                        <dt class="govuk-summary-list__key">
+                          Documents referred to in the statement
+                        </dt>
+                        <dd class="govuk-summary-list__value">
+                            <a href="#" target="_blank">Email_June_2019.rtf</a>
+                        </dd>
+                        <dd class="govuk-summary-list__actions">
+                          <a class="govuk-link" href="#">
+                            Change<span class="govuk-visually-hidden"> licence period</span>
+                          </a>
+                        </dd>
+                        </div>
+
+                        <div class="govuk-summary-list__row">
+                            <dt class="govuk-summary-list__key">
+                              
+                            </dt>
+                            <dd class="govuk-summary-list__value">
+                                <a href="#" target="_blank">Email_January_2019.rtf</a>
+                            </dd>
+                            <dd class="govuk-summary-list__actions">
+                              <a class="govuk-link" href="#">
+                                Change<span class="govuk-visually-hidden"> licence period</span>
+                              </a>
+                            </dd>
+                            </div>
+
+                            <div class="govuk-summary-list__row">
+                                <dt class="govuk-summary-list__key">
+                                  
+                                </dt>
+                                <dd class="govuk-summary-list__value">
+                                    <a href="#" target="_blank">Email_August_2019.rtf</a>
+                                </dd>
+                                <dd class="govuk-summary-list__actions">
+                                  <a class="govuk-link" href="#">
+                                    Change<span class="govuk-visually-hidden"> licence period</span>
+                                  </a>
+                                </dd>
+                                </div>
+
+                                <div class="govuk-summary-list__row">
+                                    <dt class="govuk-summary-list__key">
+                                      
+                                    </dt>
+                                    <dd class="govuk-summary-list__value">
+                                        <a href="#" target="_blank">Email_July_2019.rtf</a>
+                                    </dd>
+                                    <dd class="govuk-summary-list__actions">
+                                      <a class="govuk-link" href="#">
+                                        Change<span class="govuk-visually-hidden"> licence period</span>
+                                      </a>
+                                    </dd>
+                                    </div>
+
+        </dl>
+
+
+        <h2 class="govuk-heading-m">Expert evidence</h2>
+        <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Expert's report
+            </dt>
+            <dd class="govuk-summary-list__value">
+                <a href="#" target="_blank">Expert_report_Alex_Monroe.pdf</a>
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden"> name</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Joint statement of experts
+            </dt>
+            <dd class="govuk-summary-list__value">
+                <a href="#" target="_blank">Expert_joint_statement_Alex_Monroe.pdf</a>
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden"> date of birth</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Questions for opther party's expert or joint experts
+            </dt>
+            <dd class="govuk-summary-list__value">
+                <a href="#" target="_blank">Qs_for_other_party.pdf</a>
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden"> customer reference</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Answers to questions asked
+            </dt>
+            <dd class="govuk-summary-list__value">
+                <a href="#" target="_blank">Answers_to_other_party_Qs.pdf</a>
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden"> address</span>
+              </a>
+            </dd>
+          </div>
+          
+        </dl>
+        <h2 class="govuk-heading-m">Trial documents</h2>
+        <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Case summary
+            </dt>
+            <dd class="govuk-summary-list__value">
+                <a href="#" target="_blank">Trial_Case_Summary.pdf</a>
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden"> previous application number</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Skeleton argument
+            </dt>
+            <dd class="govuk-summary-list__value">
+                <a href="#" target="_blank">Reasons_the_fibula_is_great.pdf</a>
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden"> licence type</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Authorities
+            </dt>
+            <dd class="govuk-summary-list__value">
+                <a href="#" target="_blank">Authorities_for_case12345.pdf</a>
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden"> home address</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Costs
+            </dt>
+            <dd class="govuk-summary-list__value">
+                <a href="#" target="_blank">costs_incurred_12345.pdf</a>
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden"> licence period</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Documentary evidence for trial
+            </dt>
+            <dd class="govuk-summary-list__value">
+                <a href="#" target="_blank">Picture_of_flooding.jpg</a>
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden"> licence period</span>
+              </a>
+            </dd>
+          </div>
+        </dl>
+
+        <h2 class="govuk-heading-m">Mediation non-attendance</h2>
+        <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Non-attendance statement
+            </dt>
+            <dd class="govuk-summary-list__value">
+                <a href="#" target="_blank">1_witness_statement_John_Smith.pdf</a>
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden"> previous application number</span>
+              </a>
+            </dd>
+          </div>
+       
+
+            <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Documents referred to in statement
+                </dt>
+                <dd class="govuk-summary-list__value">
+                    <a href="#" target="_blank">5_witness_statement_Algernop_Krieger.pdf</a>
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="#">
+                    Change<span class="govuk-visually-hidden"> licence period</span>
+                  </a>
+                </dd>
+                </div>
+
+                <div class="govuk-summary-list__row">
+                    <dt class="govuk-summary-list__key">
+                      
+                    </dt>
+                    <dd class="govuk-summary-list__value">
+                        <a href="#" target="_blank">Notice_of_Intention_v1.pdf</a>
+                    </dd>
+                    <dd class="govuk-summary-list__actions">
+                      <a class="govuk-link" href="#">
+                        Change<span class="govuk-visually-hidden"> licence period</span>
+                      </a>
+                    </dd>
+                    </div>
+
+                    <div class="govuk-summary-list__row">
+                        <dt class="govuk-summary-list__key">
+                          
+                        </dt>
+                        <dd class="govuk-summary-list__value">
+                            <a href="#" target="_blank">Email_June_2019.rtf</a>
+                        </dd>
+                        <dd class="govuk-summary-list__actions">
+                          <a class="govuk-link" href="#">
+                            Change<span class="govuk-visually-hidden"> licence period</span>
+                          </a>
+                        </dd>
+                        </div>
+
+                        <div class="govuk-summary-list__row">
+                            <dt class="govuk-summary-list__key">
+                              
+                            </dt>
+                            <dd class="govuk-summary-list__value">
+                                <a href="#" target="_blank">Email_January_2019.rtf</a>
+                            </dd>
+                            <dd class="govuk-summary-list__actions">
+                              <a class="govuk-link" href="#">
+                                Change<span class="govuk-visually-hidden"> licence period</span>
+                              </a>
+                            </dd>
+                            </div>
+
+                            <div class="govuk-summary-list__row">
+                                <dt class="govuk-summary-list__key">
+                                  
+                                </dt>
+                                <dd class="govuk-summary-list__value">
+                                    <a href="#" target="_blank">Email_August_2019.rtf</a>
+                                </dd>
+                                <dd class="govuk-summary-list__actions">
+                                  <a class="govuk-link" href="#">
+                                    Change<span class="govuk-visually-hidden"> licence period</span>
+                                  </a>
+                                </dd>
+                                </div>
+
+                                <div class="govuk-summary-list__row">
+                                    <dt class="govuk-summary-list__key">
+                                      
+                                    </dt>
+                                    <dd class="govuk-summary-list__value">
+                                        <a href="#" target="_blank">Email_July_2019.rtf</a>
+                                    </dd>
+                                    <dd class="govuk-summary-list__actions">
+                                      <a class="govuk-link" href="#">
+                                        Change<span class="govuk-visually-hidden"> licence period</span>
+                                      </a>
+                                    </dd>
+                                    </div>
+
+        </dl>
+
+
+          <div class="govuk-!-padding-bottom-6"></div>
+          
+          <div class="govuk-button-group">
+            <a href="upload-doc-1.html">
+              <button class="govuk-button govuk-button--secondary" data-module="govuk-button">
+                Previous
+              </button>
+            </a>
+            <a href="docs_uploaded_1.html">
+              <button class="govuk-button" data-module="govuk-button">
+                Continue
+              </button>
+            </a>
+          </div>
+
+          <div class="govuk-button-group">
+          <a class="govuk-link" href="case-view.html">Cancel</a>
+        
+        
+        
+        
+        </div>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+{% endblock %}

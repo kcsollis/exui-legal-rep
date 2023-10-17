@@ -1,0 +1,89 @@
+{% extends "layouts/main-legalrep.html" %}
+
+{% block pageTitle %}
+  Manage cases – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block main %}
+
+<div class="govuk-width-container">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-full">
+        <div class="grid-item-case-list govuk-heading-xl">
+          <div class="case-header">
+            <h1 class="case-list-header" style="font-size: 40px;">Select the type of document you want<br>to upload</h1>
+          </div> <!-- Close the "case-header" container -->
+          <div class="govuk-!-padding-bottom-8"></div>
+
+          <p class="govuk-body-l">You can select more than one type of document</p>
+
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                <h1 class="govuk-fieldset__heading">
+                  Mediation non-attendance
+                </h1>
+              </legend>
+             
+
+              <details class="govuk-details" data-module="govuk-details" closed="">
+                <summary class="govuk-details__summary">
+                  <span class="govuk-details__summary-text">
+                    Mediation non-attendance
+                  </span>
+                </summary>
+                <div class="govuk-details__text">
+
+                    <h1 class="govuk-heading-s">Non-attendance statement</h1>
+                    <p>A written statement explaining why the mediation appointment was not attended</p>
+                    <h1 class="govuk-heading-s">Documents referred to in the statement</h1>
+                    <p>Documents referred to in the statement - for example emails, photographs of relevant documents or doctor’s notes</p>
+
+
+                </div>
+              </details>
+
+              <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+                  <label class="govuk-label govuk-checkboxes__label" for="waste">
+                    Non-attendance statement
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+                  <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+                    Documents referred to in the statement
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+
+          <div class="govuk-button-group">
+            <a href="whois-document-for-2.html">
+              <button class="govuk-button govuk-button--secondary" data-module="govuk-button">
+                Previous
+              </button>
+            </a>
+            <a href="upload-doc-2.html">
+              <button class="govuk-button" data-module="govuk-button">
+                Continue
+              </button>
+            </a>
+          </div>
+
+          <div class="govuk-button-group">
+          <a class="govuk-link" href="case-view.html">Cancel</a>
+        </div>
+          
+          
+         
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+{% endblock %}

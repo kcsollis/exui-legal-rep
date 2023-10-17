@@ -1,0 +1,330 @@
+{% extends "layouts/main-legalrep.html" %}
+
+{% block pageTitle %}
+  Manage cases – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block main %}
+
+<div class="govuk-width-container">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-full">
+        <div class="grid-item-case-list govuk-heading-xl">
+          <div class="case-header">
+            <h1 class="case-list-header" style="font-size: 40px;">Select the type of document you want<br>to upload</h1>
+          </div> <!-- Close the "case-header" container -->
+          <div class="govuk-!-padding-bottom-8"></div>
+
+          <p class="govuk-body-l">You can select more than one type of document</p>
+
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                <h1 class="govuk-fieldset__heading">
+                  Disclosure
+                </h1>
+              </legend>
+             
+              <details class="govuk-details" data-module="govuk-details" closed="">
+                <summary class="govuk-details__summary">
+                  <span class="govuk-details__summary-text">
+                    Disclosure
+                  </span>
+                </summary>
+                <div class="govuk-details__text">
+                   
+                 <h1 class="govuk-heading-s">Disclosure list</h1>
+                 <p>A list of the documents that you must how the other parties</p>
+
+                 <h1 class="govuk-heading-s">Documents for disclosure</h1>
+                 <p>Recorded information that you must show the other parties - for <br>example, contracts, invoices, emails, text messages, photos,<br> social media messages</p>
+         
+                </div>
+              </details>
+
+              <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+                  <label class="govuk-label govuk-checkboxes__label" for="waste">
+                    Disclosure list
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+                  <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+                    Documents for disclosure
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+
+
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                <h1 class="govuk-fieldset__heading">
+                  Witness evidence
+                </h1>
+              </legend>
+             
+
+              <details class="govuk-details" data-module="govuk-details" closed="">
+                <summary class="govuk-details__summary">
+                  <span class="govuk-details__summary-text">
+                    Witness evidence
+                  </span>
+                </summary>
+                <div class="govuk-details__text">
+                    <h1 class="govuk-heading-s">Witness statement</h1>
+                    <p>Your written evidence, if you are giving evidence, evidence by<br> your witness</p>
+
+                    <h1 class="govuk-heading-s">Witness summary</h1>
+                    <p>If you cannot get a full witness statement, you can use a witness<br> 
+                    summary of the evidence you would include in a witness statement. You<br>
+                need permission from the court to use a witness summary</p>
+
+                <h1 class="govuk-heading-s">Notice of intention to rely on hearsay evidence</h1>
+                <p>Notice to tell the other parties that you intend to rely on hearsay<br>
+                evidence at the trial. If the evidence in a witness statement and the<br>
+                witness is not going to be in court, you must say why</p>
+
+                <h1 class="govuk-heading-s">Documents referred to in the statement</h1>
+                    <p>Documents you or your witness refer to in the statement - for example,<br>
+                    emails, receipts, invoices, contracts and photos</p>
+                </div>
+              </details>
+
+              <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+                  <label class="govuk-label govuk-checkboxes__label" for="waste">
+                    Witness statement
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+                  <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+                    Witness summary
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+                  <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                    Notice of intention to rely on hearsay evidence
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+                    <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                      Documents referred to in the statement
+                    </label>
+                  </div>
+              </div>
+            </fieldset>
+          </div>
+
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                <h1 class="govuk-fieldset__heading">
+                  Expert evidence
+                </h1>
+              </legend>
+             
+
+              <details class="govuk-details" data-module="govuk-details" closed="">
+                <summary class="govuk-details__summary">
+                  <span class="govuk-details__summary-text">
+                    Expert evidence
+                  </span>
+                </summary>
+                <div class="govuk-details__text">
+                    <h1 class="govuk-heading-s">Expert's report</h1>
+                    <p>Written evidence by an expert. If you have agreed to share a single joint<br>
+                    expert, check if the other party has uploaded the report</p>
+
+                    <h1 class="govuk-heading-s">Joint statement of experts</h1>
+                    <p>Statement by both parties' experts setting out their areas of agreement<br>
+                    and disagreement</p>
+
+                    <h1 class="govuk-heading-s">Questions for other party's expert or joint expert</h1>
+                    <p>Written questions about an expert's report or a joint statement or<br>
+                    experts</p>
+
+                    <h1 class="govuk-heading-s">Answers to questions asked</h1>
+                    <p>Your expert's answers to questions put by the other party</p>
+                </div>
+              </details>
+
+              <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+                  <label class="govuk-label govuk-checkboxes__label" for="waste">
+                    Expert's report
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+                  <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+                    Joint statement of experts
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+                  <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                    Questions for other party's expert or joint experts
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+                    <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                      Answers to questions asked
+                    </label>
+                  </div>
+              </div>
+            </fieldset>
+          </div>
+
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                <h1 class="govuk-fieldset__heading">
+                  Trial documents
+                </h1>
+              </legend>
+             
+
+              <details class="govuk-details" data-module="govuk-details" closed="">
+                <summary class="govuk-details__summary">
+                  <span class="govuk-details__summary-text">
+                    Trial documents
+                  </span>
+                </summary>
+                <div class="govuk-details__text">
+
+                    <h1 class="govuk-heading-s">Case summary</h1>
+                    <p>Overview of your whole case</p>
+                    <h1 class="govuk-heading-s">Skeleton argument</h1>
+                    <p>Summary of the case, the areas in dispute and the reasons why you think<br>
+                    those disputes should be resolved in your favour</p>
+                    <h1 class="govuk-heading-s">Authorities</h1>
+                    <p>Details of the case law, legislation or other legal precedent that you are<br>
+                    going to rely on in court</p>
+                    <h1 class="govuk-heading-s">Costs</h1>
+                    <p>A detailed list of the costs you have incurred in making or defending the<br>
+                    claim, for example photocopying, getting copies of contracts and legal fees. Include receipts</p>
+                    <h1 class="govuk-heading-s">Documentary evidence for trial</h1>
+                    <p>Documents that you wish to rely on at the trial - for example, emails,<br>
+                    receipts, invoices, contracts and photos. You do not need to add<br>
+                    documents that you have already added under witness evidence</p>
+
+
+                </div>
+              </details>
+
+              <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+                  <label class="govuk-label govuk-checkboxes__label" for="waste">
+                    Case summary
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+                  <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+                    Skeleton argument
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+                  <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                    Authorities
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+                    <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                      Costs
+                    </label>
+                  </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+                    <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                      Documentary evidence for trial
+                    </label>
+                  </div>
+              </div>
+            </fieldset>
+          </div>
+
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                <h1 class="govuk-fieldset__heading">
+                  Mediation non-attendance
+                </h1>
+              </legend>
+             
+
+              <details class="govuk-details" data-module="govuk-details" closed="">
+                <summary class="govuk-details__summary">
+                  <span class="govuk-details__summary-text">
+                    Mediation non-attendance
+                  </span>
+                </summary>
+                <div class="govuk-details__text">
+
+                    <h1 class="govuk-heading-s">Non-attendance statement</h1>
+                    <p>A written statement explaining why the mediation appointment was not attended</p>
+                    <h1 class="govuk-heading-s">Documents referred to in the statement</h1>
+                    <p>Documents referred to in the statement - for example emails, photographs of relevant documents or doctor’s notes</p>
+
+
+                </div>
+              </details>
+
+              <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+                  <label class="govuk-label govuk-checkboxes__label" for="waste">
+                    Non-attendance statement
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+                  <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+                    Documents referred to in the statement
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+
+          <div class="govuk-button-group">
+            <a href="whois-document-for-1.html">
+              <button class="govuk-button govuk-button--secondary" data-module="govuk-button">
+                Previous
+              </button>
+            </a>
+            <a href="upload-doc-1.html">
+              <button class="govuk-button" data-module="govuk-button">
+                Continue
+              </button>
+            </a>
+          </div>
+
+          <div class="govuk-button-group">
+          <a class="govuk-link" href="case-view.html">Cancel</a>
+        </div>
+          
+          
+         
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+{% endblock %}

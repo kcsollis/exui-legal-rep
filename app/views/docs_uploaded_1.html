@@ -1,0 +1,44 @@
+{% extends "layouts/main-legalrep.html" %}
+
+{% block pageTitle %}
+  Manage cases – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block main %}
+
+<div class="govuk-width-container">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-full">
+        <div class="grid-item-case-list govuk-heading-xl">
+          <div class="case-header">
+            
+          </div> <!-- Close the "case-header" container -->
+          <div class="govuk-!-padding-bottom-8"></div>
+
+          <div class="govuk-panel govuk-panel--confirmation">
+            <h1 class="govuk-panel__title">
+              Documents uploaded
+            </h1>
+          </div>
+        
+          <p class="govuk-body">You can continue uploading documents or return later. 
+            To upload more documents, go to Next steps and select 
+            'Document upload.'</p>
+
+            <a href="case-view.html">
+                <button class="govuk-button" data-module="govuk-button">
+                    Close and return to case details
+                </button>
+            </a>
+            
+        
+        
+        </div>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+{% endblock %}

@@ -1,0 +1,510 @@
+//
+// For guidance on how to add CSS and SCSS see:
+// https://prototype-kit.service.gov.uk/docs/adding-css-javascript-and-images
+// 
+
+// General
+.div {
+    font-family: "GDS Transport";
+}
+
+// Header
+.govuk-header__container {
+	border-bottom: 0;
+	margin-bottom: 0;
+    padding-bottom: 10px;
+}
+
+.govuk-phase-banner {
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: -10px;
+}
+
+
+.grid-container-header {
+  display: grid;
+  grid-template-columns: 180px auto AUTO;
+  margin-left: 10px;
+  grid-row-gap: 10px;
+}
+
+.grid-item {
+  background-color: black;
+  color: white;
+  text-align: left;
+}
+
+.grid-item.a {
+  background-color: black;
+  color: white;
+  text-align: left;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.grid-item:hover {
+  cursor: pointer;
+  color: white;
+}
+
+.grid-item:visited {
+  cursor: pointer;
+  color: white;
+}
+
+.MyHMCTS {
+  background-color: black;
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+.MyHMCTS:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+.manage {
+  background-color: black;
+  font-size: 24px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.manage:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+.case-links {
+  font-size: 19px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  margin-right: 10px;
+  text-decoration: underline;
+}
+
+.case-links:hover {
+  font-size: 19px;
+  color: white;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.case-links:visited {
+  font-size: 19px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+
+.sign-out-column {
+  text-align: right;
+  padding-right: 30px;
+  padding-top: 1px;
+}
+
+.signout {
+  font-size: 19px;
+  text-decoration: underline;
+}
+
+.signout:hover {
+  color: white;
+}
+
+.find-case-column {
+  text-align: right;
+  padding-right: 30px;
+  padding-top: 1px;
+}
+
+.find-case {
+  font-size: 19px;
+  color: white;
+  font-weight: bold;
+  text-decoration: underline;
+  text-align: right;
+}
+
+.find-case:hover {
+  color: white;
+}
+
+
+// Filters 
+.case-list-filter {
+    margin-top: 25px;
+    margin-left: 50px;
+    }
+
+
+.filter-selects {
+    font-family: arial;
+    width: 300px;
+    height: 31px;
+    border: 1px solid #122337;
+    font-size: 16px;
+    border-radius:5px;
+    padding-left: 5px;
+    display: block;
+    margin-bottom: 25px;
+    margin-top: 5px;
+}
+
+.filter-input {
+  font-family: arial;
+  width: 300px;
+  height: 31px;
+  border: 1px solid #122337;
+  font-size: 16px;
+  padding-left: 5px;
+  display: block;
+  margin-top: 5px;
+}
+
+.filter-label {
+  font-family: arial;
+  font-size: 16px;
+}
+
+.govuk-label-select {
+    font-size: 16px;
+    font-family: Arial;
+
+}
+
+.button-filter {
+    font-family: arial;
+    font-size: 16px;
+    margin-right: 15px;
+}
+
+.filter-heading {
+font-family: arial;
+}
+
+
+
+// Main section
+
+// Case list header
+.grid-item-case-list {
+  font-family: "GDS Transport";
+  // font-weight: bold;
+  // font-size: 36px;
+}
+
+.case-list-header {
+  font-size: 48px;
+}
+
+// Legal rep filters
+.grid-container-legalrep-full {
+    display: grid;
+    grid-template-columns: auto ;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: -50px;;
+    grid-row-gap: 10px;
+}
+
+.grid-container-legalrep-main {
+    display: grid;
+    grid-template-columns: 350px auto;
+    margin-left: 25px;
+    margin-right: 25px;
+    grid-row-gap: 10px;
+    align-items: left;
+  }
+
+  .grid-item-filters {
+    border: 1px solid #c9c9c9;
+    padding: 10px;
+    width: auto;
+    height: auto;
+    margin-bottom: 10px;
+    margin-right: 10px;
+  }
+
+/* Custom styles for "Case list" and "Create case" links */
+.case-links {
+  color: white !important; // Set text color to white and use !important
+  text-decoration: underline; // Always underline the text
+}
+
+.case-links:hover {
+  text-decoration: underline; // Maintain underline on hover
+  font-weight: bold; // Make the text bold on hover
+}
+
+footer {
+  width: 100%; /* Make the footer span the full width of the page */
+  background-color: #333; /* Adjust the background color as needed */
+  color: white; /* Adjust the text color as needed */
+  padding: 20px; /* Add padding for better visual spacing */
+  position: relative; /* Position the footer absolutely */
+  bottom: 0; /* Stick the footer to the bottom of its containing element (the page) */
+  left: 0; /* Align the footer to the left */
+  right: 0; /* Align the footer to the right */
+}
+
+/* Increase padding for the table cells */
+.govuk-table__cell {
+  padding: 20px; /* Adjust the value to your preference */
+}
+
+.govuk-width-container {
+    max-width: 80%; /* Allow content to expand to the full width of the viewport */
+    margin: 0 auto; /* Center the content horizontally */
+    padding: 0 20px; /* Add padding on the left and right sides */
+}
+
+.govuk-grid-column-two-thirds {
+    width: auto; /* Allow the column to take up the available width */
+}
+
+.search-bar input {
+  width: 200px; /* Adjust the width as needed */
+  padding: 5px; /* Add padding for spacing */
+  margin-right: 10px; /* Add spacing between input and button */
+}
+
+
+
+/* CSS for the search bar and container */
+.grid-item-case-list {
+  font-family: "GDS Transport";
+}
+
+.case-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.case-list-header {
+  font-size: 48px;
+  margin-bottom: -20px; /* Add margin to reduce the space */
+}
+
+
+.search-bar input[type="text"] {
+  width: 200px;
+  padding: 5px;
+  margin-right: 10px;
+}
+
+/* CSS for the content container */
+.content-container {
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+
+
+
+/* CSS for the select dropdown */
+.search-input select {
+  padding: 5px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* CSS for the search button */
+.search-button button {
+  background-color: #00703c;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+/* CSS for the text on the left */
+.search-controls {
+  display: flex;
+  align-items: center;
+}
+
+/* CSS for the select dropdown */
+.search-input select {
+  padding: 5px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* CSS for the search button */
+.search-button button {
+  background-color: #00703c;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+/* CSS for the search controls */
+.search-controls {
+  display: flex;
+  align-items: center;
+}
+
+/* CSS for the select dropdown */
+.search-controls select {
+  flex-grow: 1; /* Allow the select element to grow and fill available space */
+  padding: 5px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+/* CSS for the search button */
+.search-controls button {
+  background-color: #00703c;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.search-bar .search-controls {
+  display: flex;
+  align-items: center;
+}
+
+
+/* CSS for the select dropdown */
+.search-bar .search-input select {
+  padding: 5px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* CSS for the search button */
+.search-bar .search-button button {
+  background-color: #00703c;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+/* CSS for the search bar and container */
+.search-bar {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.search-bar .search-controls {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar .search-text {
+  margin-right: 10px;
+  font-size: 16px;
+  font-weight: normal; /* Set the font weight to normal (not bold) */
+}
+
+/* Container for select and button */
+.search-bar .search-input-container {
+  display: flex;
+  align-items: center;
+}
+
+/* CSS for the select dropdown */
+.search-bar .search-input select {
+  padding: 5px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+/* Button */
+.my-custom-button {
+  background-color: #00853D; /* Gov UK green */
+  color: #fff !important; /* Force white text with !important */
+  border: none;
+  padding: 10px 20px; /* Adjust padding for a larger button */
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 0; /* Square off the button */
+  font-weight: normal; /* Set text to normal weight */
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  font-size: 20px; /* Adjust the font size as needed */
+}
+
+
+.my-custom-button:hover {
+  background-color: #005E2B; /* Darker green on hover */
+}
+
+.my-custom-button:hover {
+  background-color: #005E2B; /* Darker green on hover */
+}
+
+/* Maintain underline for links in other parts of your code */
+a {
+  text-decoration: underline;
+}
+
+a:hover {
+  font-weight: bold; /* Make the text bold on hover */
+}
+
+
+
+
+/* Target the specific table by its class */
+.custom-table {
+  border: 1px solid #000; /* Add an outline around the table */
+  border-collapse: collapse; /* Collapse the borders to avoid gaps */
+  width: 100%; /* Ensure the table spans the full width */
+
+  /* Style the top row with a grey background */
+  thead tr {
+    background-color: lightgrey; /* Grey background color */
+  }
+
+  /* Target the third and subsequent columns and hide them */
+  th:nth-child(n + 3),
+  td:nth-child(n + 3) {
+    display: none;
+  }
+
+  /* Style table headers */
+  th {
+    border-top: 1px solid #000; /* Add top border for header cells */
+    border-bottom: 1px solid #000; /* Add bottom border for header cells */
+    padding: 8px; /* Add padding to header cells */
+  }
+
+  /* Style table cells */
+  td {
+    border-top: 1px solid #000; /* Add top border for data cells */
+    border-bottom: 1px solid #000; /* Add bottom border for data cells */
+    padding: 8px; /* Add padding to data cells */
+  }
+}
